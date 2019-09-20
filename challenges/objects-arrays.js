@@ -12,7 +12,10 @@ const trex = {
   diet: 'carnivorous',
   weight: '700kg',
   length: '12m',
-  period: 'Late Cretaceous'
+  period: 'Late Cretaceous',
+  roar: function(){
+    return 'RAWERSRARARWERSARARARRRR!';
+  }
 }
 
 // stegosaurus, herbivorous, 2000kg, 9m, Late Jurassic
@@ -36,20 +39,20 @@ const raptor = {
 // Using your dinosaur objects, log answers to these questions:
 
 // How much did tyrannosaurus weigh?
-console.log();
+console.log(`The ${trex.name} weighed ${trex.weight}`);
 
 // What was the diet of a velociraptor?
-console.log();
+console.log(`The ${raptor.name} had an ${raptor.diet} diet.`);
 
 // How long was a stegosaurus?
-console.log();
+console.log(`The ${stego.name} had a length of ${stego.length}.`);
 
 // What time period did tyrannosaurus live in?
-console.log();
+console.log(`The ${trex.name} lived during the ${trex.period} period.`);
 
 
 // Create a new roar method for the tyrannosaurus.  When called, return "RAWERSRARARWERSARARARRRR!" Log the result.
-console.log();
+console.log(`I am the mighty ${trex.name}, hear me ${trex.roar()}`);
 
 
 // ==== Arrays ====
